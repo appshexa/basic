@@ -13,7 +13,7 @@
         @stack('scripts')
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script text="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
 
 
         @stack('styles')
@@ -25,7 +25,9 @@
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
+
             {{ $slot }}
+            
         </div>
     </body>
 </html>
